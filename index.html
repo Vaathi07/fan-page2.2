@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSK Fan Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body class="light-theme">
+    <div class="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-close">×</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#players">Players</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#performance">Team Analysis</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#shop">Jersey Shop</a></li>
+      </ul>
+    </nav>
+
+    <div class="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <main>
+      <section id="home" class="hero">
+        <img src="https://www.chennaisuperkings.com/assets/images/csk_logo.png" alt="CSK Logo" class="team-logo">
+        <h1>CHENNAI SUPER KINGS</h1>
+        <p class="tagline">Whistle Podu! 🦁</p>
+      </section>
+
+      <section id="players" class="players-section">
+        <h2>Star Players</h2>
+        <div class="players-grid"></div>
+      </section>
+
+      <section id="stats" class="stats-section">
+        <h2>Team Statistics</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>IPL Titles</h3>
+            <p class="stat-number">5</p>
+            <p class="stat-years">2010, 2011, 2018, 2021, 2023</p>
+          </div>
+          <div class="stat-card">
+            <h3>Finals Appearances</h3>
+            <p class="stat-number">10</p>
+          </div>
+          <div class="stat-card">
+            <h3>Win Percentage</h3>
+            <p class="stat-number">59.83%</p>
+          </div>
+          <div class="stat-card">
+            <h3>Most Runs</h3>
+            <p class="stat-number">5082</p>
+            <p class="stat-player">MS Dhoni</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="performance" class="performance-section">
+        <h2>Team Analysis</h2>
+        <div class="charts-grid">
+          <div class="chart-container">
+            <canvas id="teamCompositionChart"></canvas>
+          </div>
+          <div class="chart-container">
+            <canvas id="matchWinSourceChart"></canvas>
+          </div>
+          <div class="chart-container">
+            <canvas id="performanceByVenueChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid"></div>
+      </section>
+
+      <section id="shop" class="shop-section">
+        <h2>Jersey Shop</h2>
+        <div class="jersey-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 CSK Fan Page | Made with 💛 for Super Kings</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
